@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Book App</string>
+    <string name="internet_connectivity_required">Internet Connectivity Required!</string>
+    <string name="failed_to_parse_response">Failed to Parse response</string>
+    <string name="invalid_response">invalid response</string>
+    <string name="search_hint">Search Book Name or Author Name</string>
+    <string name="book_name">Book Name : %s</string>
+    <string name="author_name">Author Name : %s</string>
+    <string name="add_to_favorite">Add to Favorite:</string>
+</resources>
