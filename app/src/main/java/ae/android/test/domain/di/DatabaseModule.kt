@@ -1,5 +1,6 @@
 package ae.android.test.domain.di
 
+import ae.android.test.base.BaseConstants
 import ae.android.test.data.db.AppDatabase
 import ae.android.test.data.db.BookDao
 import android.content.Context
@@ -21,7 +22,7 @@ object DatabaseModule {
         return Room.databaseBuilder(
             appContext,
             AppDatabase::class.java,
-            "book_database"
+            BaseConstants.DB_NAME
         ).build()
     }
 
