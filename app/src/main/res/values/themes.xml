@@ -19,6 +19,7 @@
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:fitsSystemWindows">true</item> <!-- Ensure proper padding for system UI -->
         <item name="android:windowLightStatusBar">true</item> <!-- Optional: Light status bar for dark content -->
+        <item name="windowActionModeOverlay">true</item>
     </style>
 
     <!-- No Action bar Theme. -->
