@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.View
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        //enableEdgeToEdge()
         val adapter = setUpAdapter()
         observerDataChange(adapter)
         observerLoader()

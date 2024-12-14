@@ -6,10 +6,10 @@ buildscript {
         targetSdkVersion = 35
         compileSdkVersion = 35
         buildToolVersion = '35.0.0'
-        kotlin_version = '1.9.20'
-        kotlin_version_std = '1.9.20'
+        kotlin_version = '2.0.0'
+        kotlin_version_std = '2.0.0'
         hilt_version = '2.52'
-        ksp_version = '1.0.11'
+        ksp_version = '1.0.24'
         build_gradle_version = '8.7.3'
     }
     repositories {
@@ -21,7 +21,7 @@ buildscript {
         classpath "com.android.tools.build:gradle:$build_gradle_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
-        classpath("com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:$kotlin_version-$ksp_version")
+        classpath "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:$kotlin_version-$ksp_version"
     }
 }
 

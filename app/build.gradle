@@ -31,13 +31,13 @@ android {
         viewBinding true
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_21
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        //println(JavaVersion.VERSION_21.toString())
-        //jvmTarget = JavaVersion.VERSION_21.toString()
+        //println(JavaVersion.VERSION_17.toString())
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     dependenciesInfo {
         includeInApk false
@@ -58,8 +58,8 @@ dependencies {
     // Room
     implementation 'androidx.room:room-runtime:2.6.1'
     implementation 'androidx.test:runner:1.6.2'
-    //kapt 'androidx.room:room-compiler:2.6.1'
-    ksp 'androidx.room:room-compiler:2.6.1'
+    kapt 'androidx.room:room-compiler:2.6.1'
+    //ksp 'androidx.room:room-compiler:2.6.1'
 
     // Retrofit and Gson
     implementation 'com.squareup.retrofit2:retrofit:2.11.0'
